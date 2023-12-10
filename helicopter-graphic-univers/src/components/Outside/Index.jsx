@@ -2,24 +2,54 @@ import React from 'react'
 import styled from 'styled-components'
 import ToTopButton from '../ToTopButton/Index'
 
+
+
+const Section = styled.div`
+  height: 100vh;
+  /* background-color:#85c994; */
+  scroll-snap-align: center;
+  /* border: 2px solid orange; */
+  @media only screen and (max-width: 768px) {
+    margin-top:500px;
+    height: 500px;
+  }
+`
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+  }
+
 `;
 
 const Text = styled.div`
   font-weight: 200;
   font-size: 24px;
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
+
 const BoxText =styled.div`
 margin-top:50px;
 /* border: 2px solid green; */
 display: flex;
 align-items: center;
 justify-content: center;
+@media only screen and (max-width: 768px) {
+    /* border: 2px solid green; */
+    margin-right:10px;
+    margin-left:10px;
+  }
 `
 
 const Left = styled.div`
@@ -27,9 +57,12 @@ const Left = styled.div`
   margin-top:50px;
   margin-left:150px;
   /* border: 2px solid pink; */
-  /* @media only screen and (max-width: 768px) {
-    justify-content: center;
-  } */
+  @media only screen and (max-width: 768px) {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left:0px;
+  }
 `;
 
 const Right = styled.div`
@@ -48,8 +81,8 @@ const Img = styled.img`
   animation: animate 1s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: auto;
   }
 
   @keyframes animate {
@@ -66,8 +99,7 @@ const ImgMap = styled.img`
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    display:none;
   }
 
   @keyframes animate {
@@ -77,11 +109,7 @@ const ImgMap = styled.img`
   }
 `;
 
-const Section = styled.div`
-  height: 100vh;
-  /* background-color:#85c994; */
-  scroll-snap-align: center;
-`
+
 
 const BoxTopButton = styled.div`
   /* border: 2px solid green; */

@@ -10,6 +10,9 @@ const Container = styled.div`
     align-items: center; */
     justify-content:center;
     /* border: 2px solid white; */
+    @media (max-width: 768px) {
+    display: none; 
+  }
 `
 
 

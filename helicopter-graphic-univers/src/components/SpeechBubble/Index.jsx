@@ -25,6 +25,11 @@ const SpeechBubbleContainer = styled.div`
     left: 19px;
     bottom: -20px;
   }
+
+  @media only screen and (max-width: 768px) {
+  width: 200px;
+  margin-bottom:5px;
+}
 `;
 
 const Button = styled.button`

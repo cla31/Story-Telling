@@ -14,12 +14,16 @@ padding-top:200px;
 `;
 
 const Title = styled.div`
- font-size: 90px;
+  font-size: 90px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
   -webkit-text-stroke: 1px white;
   position:relative;
+  @media only screen and (max-width: 768px) {
+    font-size: 65px;
+     /* border: 2px solid green; */
+  }
 
   &:after{
     content:"Overview";
@@ -35,7 +39,6 @@ const Title = styled.div`
   &:hover{
     &:after{
       animation: moveText 0.5s linear both;
-
       @keyframes moveText{
         to{
           width: 100%;
@@ -48,12 +51,22 @@ const Title = styled.div`
   const BoxTitle = styled.div`
   display: flex;
   justify-content: center;
+  /* border: 2px solid red; */
+  @media only screen and (max-width: 768px) {
+    font-size: 40px;
+    flex-direction:column;
+    align-items: center;
+  }
   `
    const BoxTableOverview = styled.div`
    width:900px;
-   /*display: flex;
-   justify-content: center; */
-     /* border: 2px solid blue; */
+   /* display: flex;
+   justify-content: center;  */
+    /* border: 2px solid blue; */
+    @media only screen and (max-width: 768px) {
+    /* min-width:300px; */
+    
+  }
    `
    const CenterOverview =styled.div`
    display: flex;

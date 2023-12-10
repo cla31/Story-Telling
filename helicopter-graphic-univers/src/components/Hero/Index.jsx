@@ -13,6 +13,9 @@ const Section = styled.div`
   flex-direction: column;
   align-items:center;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    height: 70vh;
+  }
 `;
 
 const Container = styled.div`
@@ -22,6 +25,13 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+  }
 `;
 
 const Left=styled.div`
@@ -31,11 +41,18 @@ const Left=styled.div`
   justify-content: center;
   /* gap: 20px; */
   /* border: 2px solid green; */
+  @media only screen and (max-width: 768px) {
+    width:270px;
+
+  }
 `
 
 const Title = styled.h1`
   font-size: 74px;
   /* border: 2px solid green; */
+  @media only screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 const BoxSubtitle = styled.div`
@@ -48,6 +65,9 @@ const BoxSubtitle = styled.div`
 const Subtitle = styled.h2`
   color: #da4ea2;
   /* border: 2px solid green; */
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const Line = styled.img`
@@ -59,6 +79,10 @@ const Right=styled.div`
   flex: 3;
   position: relative;
   /* border: 2px solid blue; */
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    width: 100%;
+  }
 `
 
 const SpeechBubbleContainerOne = styled.div`
@@ -71,6 +95,12 @@ const SpeechBubbleContainerOne = styled.div`
   color: #fff;
   position: relative;
   border-radius:75px;
+  @media only screen and (max-width: 768px) {
+    /* border: 2px solid blue; */
+    width:200px;
+    font-size: 12px;
+    margin-left:20px;
+  }
   
 
   &:before {
@@ -101,12 +131,21 @@ const ImgBird = styled.img`
 `;
 
 
-// const TestHelicoGif = styled.div`
-// width: 350px;
-// height: 250px;
-// margin: 250px auto 0;
-// /* border: 2px solid red; */
-// `
+const TestHelicoGif = styled.div`
+display:none;
+@media (max-width: 768px) {
+  display:flex;
+  justify-content: center;
+  align-items: center;   
+  }
+`
+const GifHelico = styled.img`
+width:270px;
+height:auto;
+margin-top:40px;
+
+/* border: 2px solid red; */
+`
 
 const Hero = () => {
   return (
@@ -132,11 +171,11 @@ const Hero = () => {
         </Left>
         <Right>
           <Helicopter/>
-            {/* <TestHelicoGif>
-              <img src='./img/helico1.gif' alt='Helicoptère en mouvement'/>
-            </TestHelicoGif>     */}
-        </Right>
-      </Container>
+            <TestHelicoGif>
+              <GifHelico src='./img/helico1.gif' alt='Helicoptère en mouvement'/>
+            </TestHelicoGif>    
+         </Right>
+      </Container> 
     </Section>
   )
 }

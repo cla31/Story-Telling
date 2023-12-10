@@ -10,30 +10,47 @@ const Section = styled.div`
   /* border: 2px solid white; */
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    height: 70vh;
+  }
 `;
 
 const Container = styled.div`
+  /* border: 2px solid green; */
   height: 100vh;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+  }
 `;
 
 
 const Left = styled.div`
     flex: 1;
+    @media only screen and (max-width: 768px) {
+    /* flex: 1;
+    width: 100%; */
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+  }
 
-/* @media only screen and (max-width: 768px) {
-  display: none;
-} */
 `;
 
 const Title = styled.h1`
   font-size: 74px;
 
+
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 40px;
+    /* border: 2px solid white; */
   }
 `;
 
@@ -44,17 +61,23 @@ const Right = styled.div`
   justify-content: center;
   gap: 20px;
 
-
   /* @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
   } */
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    align-items: center;
+  }
 `;
 
 const WhatWeDo = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const Line = styled.img`
@@ -68,6 +91,12 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    /* border: 2px solid green; */
+    margin-right:10px;
+    margin-left:10px;
+  }
 `;
 
 
@@ -79,8 +108,9 @@ const Img = styled.img`
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    margin-top:0px;
+    width: 280px;
+    height: auto;
   }
 
   @keyframes animate {
