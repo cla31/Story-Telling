@@ -42,17 +42,17 @@ const SpeechBubble = () => {
   return (
     <SpeechBubbleContainer>
         <div>
-        Bonjour! 
+        Hello! 
         <br />
-        Je m'appelle Plume Copter et j'ai le plaisir de vous présenter
-    mes oeuvres d'art aériennes.
+        My name is Plume Copter and I have the pleasure of introducing you
+    my aerial works of art.
     <br />
-   N'oubliez pas que ceci n'est qu'un vol d'idées préliminaires!
+    Remember! This is just a flight over preliminary ideas...
     <br />
-    Si vous souhaitez que je déploie mes ailes artistiques encore plus loin, je suis 
-    prêt à prendre en compte toutes vos suggestions... 
+    If you would like me to spread my artistic wings even further, I am
+    ready to take into account all your suggestions...
     <br />
-    En attendant, envolez-vous pour un avant goût de mes créations rotoriennes en suivant le lien ci-dessous:
+    In the meantime, take off for a taste of my Rotorian creations by following the link below:
         </div>   
       <NavLink to="/PageGraphic">
         <Button>Here</Button>

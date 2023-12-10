@@ -126,15 +126,15 @@ const Inside = () => {
           <Title>Inside</Title>
             <WhatWeDo>
               <Line src="./img/line.png" />
-              <Subtitle>Voyagez dans notre hélicoptère créatif</Subtitle>            
+              <Subtitle>Travel in our creative helicopter</Subtitle>            
               <ImgBird src="./img/oiseauLeft.png" /> 
             </WhatWeDo>
             <Desc>
-             Poursuivons notre navigation à l'intérieur de l'hélicoptère...
+            Let's continue our navigation inside the helicopter...
              <br/>
-             A bord, chaque détail est pensé pour vous offrir une expérience unique.
+             On board, every detail is thought to offer you a unique experience.
              <br/>
-             Préparez-vous à explorer un intérieur où la technologie de pointe fusionne avec le design le plus élégant!
+             Get ready to explore an interior where advanced technology merges with the most elegant design!
             </Desc>
            <PositionTopButton>
             <BoxTopButton>

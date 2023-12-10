@@ -16,7 +16,7 @@ const TableOverview = () => {
                 <div className="ch-item ch-img-4">
                   <div className="ch-info-wrap">
                     <div className="ch-info">
-                      <div className="ch-info-front ch-img-1">Contrat</div>
+                      <div className="ch-info-front ch-img-1">Contract</div>
                       <div className="ch-info-back">
                         <h3>Deepview</h3>
                       </div>

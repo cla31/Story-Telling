@@ -100,31 +100,41 @@ const ImgBird = styled.img`
   }
 `;
 
+
+// const TestHelicoGif = styled.div`
+// width: 350px;
+// height: 250px;
+// margin: 250px auto 0;
+// /* border: 2px solid red; */
+// `
+
 const Hero = () => {
   return (
     <Section>
       <Navbar/>
       <Container>
         <Left>
-        <Title>Envol numérique</Title>
+        <Title>Digital takeoff</Title>
           <BoxSubtitle>
             <Line src="./img/line.png" />
-            <Subtitle>Naviguez dans notre univers graphique</Subtitle>
+            <Subtitle>Navigate in our graphic universe</Subtitle>
           </BoxSubtitle>
-          {/* <SpeechBubble/> */}
           <ImgBird src="./img/oiseauRight.png" />
           <SpeechBubbleContainerOne>
           <div>
-             Attachez vos ceintures!
+          Fasten your seat belt!
              <br />
-             Notre hélicoptère numérique est prêt à vous faire vivre une expérience en ligne qui décoiffe!
+             Our digital helicopter is ready to give you a mind-blowing online experience!
              <br />
-             Bienvenue à bord, je serai votre guide ailé.
+             Welcome on board! I will be your winged guide.
            </div>   
           </SpeechBubbleContainerOne>     
         </Left>
         <Right>
           <Helicopter/>
+            {/* <TestHelicoGif>
+              <img src='./img/helico1.gif' alt='Helicoptère en mouvement'/>
+            </TestHelicoGif>     */}
         </Right>
       </Container>
     </Section>
