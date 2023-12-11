@@ -11,7 +11,7 @@ const Bird = () => {
   return ( 
     <>
       <Container>
-        <Animation numberOfImages={16} dossierImages='./img/animations/bird/' imageFileName='oiseau' id='bird'/>
+        <Animation numberOfImages={39} dossierImages='./img/animations/bird/' imageFileName='oiseau' id='bird'/>
       </Container> 
     </>                  
   )
